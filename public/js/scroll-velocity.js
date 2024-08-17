@@ -1,5 +1,7 @@
+const info = document.querySelector('.info')
+
 export const scrollVelocity = () => {
-	document.addEventListener(
+	info.addEventListener(
 		'wheel',
 		function (event) {
 			event.preventDefault() // Evitar el comportamiento predeterminado de scroll
