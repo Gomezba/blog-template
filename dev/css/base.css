@@ -283,7 +283,7 @@ div:has(pre code) {
 	background-color: #282936;
 
 	@media (width > 900px) {
-		max-width: 100%;
+		max-width: 66ch;
 	}
 
 	@media (width > 1900px) {
