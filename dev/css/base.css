@@ -17,8 +17,8 @@
 	--color-title-even-menu: rgb(93, 107, 126);
 	--color-title-menu-hover: hsla(0, 1%, 83%, 0.856);
 	--color-menu-link: hsl(207, 4%, 46%);
-	--color-link-hover: hsla(260, 34%, 51%, 0.541);
-	--color-menu-link-active: hsl(266, 69%, 65%);
+	--color-link-hover: #69d9ed81;
+	--color-menu-link-active: #69daed;
 
 	/* menu lateral derecho */
 	--bg-submenu: hsl(240, 13%, 11%);
@@ -58,7 +58,7 @@
 	--top-sticky-2: 0px;
 	--top-sticky-3: 0px;
 
-	--color-main-title: hsl(0, 12%, 90%);
+	--color-main-title: #69daed;
 	--color-main-subtitle-1: hsl(39, 100%, 60%);
 	--color-main-subtitle-2: hsl(270, 40%, 70%);
 	--color-main-subtitle-3: hsla(160, 76%, 53%, 0.616);
@@ -335,6 +335,25 @@ div:has(pre code) code {
 		font-size: 0.89rem;
 	}
 }
+
+div:has(pre code) {
+	position: relative;
+	box-shadow: 0 0 15px #69d9ed;
+}
+
+div:has(pre code[class*='jsx'])::after {
+	position: absolute;
+	width: max-content;
+	top: -1rem;
+	right: 0.5rem;
+	content: 'JSX';
+	padding: var(--pd-small);
+	border-radius: var(--br-small);
+	background-color: #69daed;
+	color: black;
+	font-weight: bolder;
+}
+
 /* -------------------------------- */
 table {
 	width: 100%;
