@@ -135,6 +135,10 @@ img {
 	}
 }
 
+:is(h2, h3, h4) + div:has(pre code) {
+	margin-top: 1em;
+}
+
 h1 {
 	padding-left: 1.1em;
 	text-align: center;
@@ -353,6 +357,7 @@ div:has(pre code[class*='html'])::after {
 	border-radius: var(--br-small);
 	color: black;
 	font-weight: bolder;
+	font-size: 0.8rem;
 }
 
 div:has(pre code[class*='jsx'])::after {
