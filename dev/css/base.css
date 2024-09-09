@@ -347,9 +347,12 @@ div:has(pre code) {
 	position: relative;
 }
 
-div:has(pre code[class*='jsx'])::after,
 div:has(pre code[class*='javascript'])::after,
+div:has(pre code[class*='jsx'])::after,
+div:has(pre code[class*='typescript'])::after,
+div:has(pre code[class*='tsx'])::after,
 div:has(pre code[class*='css'])::after,
+div:has(pre code[class*='scss'])::after,
 div:has(pre code[class*='html'])::after {
 	position: absolute;
 	width: max-content;
@@ -362,14 +365,26 @@ div:has(pre code[class*='html'])::after {
 	font-size: 0.8rem;
 }
 
-div:has(pre code[class*='jsx'])::after {
-	content: 'JSX';
-	background-color: #69daed;
-}
-
 div:has(pre code[class*='javascript'])::after {
 	content: 'JS';
 	background-color: #efd81d;
+}
+
+div:has(pre code[class*='jsx'])::after {
+	content: 'JSX';
+	background-color: #364055;
+	color: #6cddfd;
+}
+
+div:has(pre code[class*='typescript'])::after {
+	content: 'TS';
+	background-color: #378fca;
+}
+
+div:has(pre code[class*='tsx'])::after {
+	content: 'TSX';
+	background-color: #364055;
+	color: #6cddfd;
 }
 
 div:has(pre code[class*='css'])::after {
