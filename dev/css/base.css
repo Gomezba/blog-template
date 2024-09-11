@@ -297,6 +297,18 @@ div:has(pre code) {
 	}
 }
 
+pre[class*='language-']::-webkit-scrollbar {
+	height: 0.5rem;
+}
+pre[class*='language-']::-webkit-scrollbar-thumb {
+	background-color: #5a9fa8c0;
+	border-radius: 10px;
+}
+pre[class*='language-']::-webkit-scrollbar-track {
+	background-color: #222430;
+	border-radius: 10px;
+}
+
 div:has(pre code) + p.des-code {
 	margin: 0;
 	font-size: 1rem;
